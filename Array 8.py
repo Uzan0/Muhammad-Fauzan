@@ -8,11 +8,13 @@ def show_data():
     else:
         for indeks in range (len(buku)):
             print ("[%d] %s" % (indeks, buku[indeks]))
+show_data()
 
 #fungsi_InsertData
 def insert_data():
     buku_baru = input("Judul Buku: ")
     buku.append("buku_baru")
+insert_data()
 
 #fungsi_EditData
 def edit_data():
@@ -23,6 +25,7 @@ def edit_data():
     else:
         judul_baru = input("Judul baru: ")
         buku[indeks] = judul_baru
+edit_data()
 
 #fungsi_DeleteData
 def delete_data():
@@ -32,6 +35,7 @@ def delete_data():
         print ("ID salah")
     else:
         buku.remove(buku[indeks])
+delete_data()
 
 #fungsi_ShowMenu
 def show_menu():
